@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+html {
+    background-color: black;
+}
+
+body {
+    position: relative;
+    font-size: 1.7em;
+    /* padding: 20px;
+    clear: both; */
+    min-width: 600px;
+    max-width: 2060px;
+    margin: 20px auto 20px auto;
+    background-color: burlywood;
+}
+
+input#orderDate{
+    position: absolute;
+    left: 500px;
+    
+}
+/* 3. id  and class selectors */
+
+div#horizontalNav a {
+    text-decoration: none;
+}
+
+div#horizontalNav a:visited,
+nav#horizontalNav a:link {
+    color: blue;
+    font-size: 1.9em;
+}
+
+div#horizontalNav a:hover,
+div#horizontalNav a:active {
+    color: hsla(0, 0%, 100%, 0.8);
+    background-color: rgb(255, 0, 0);
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+#logoImage {
+    display: block;
+    width: 100%;
+    height: 150px;
+  
+}
+
+header>div#horizontalNav ul li {
+    /* display: block; */
+    float: left; 
+    margin:20px;
+    
+    
+}
+
+body footer {
+    color: red;
+    font-size: 1em;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: center;
+    background-color: coral;
+}
+#orderDate{
+    margin-left:15px;
+}
+
+section#orderSection {
+    -webkit-flex: 1 1 200px;
+    flex: 1 1 200px;
+    margin: 20px;
+ }
+    
+/* Order Table Styles */
+
+table#orderTable {
+    margin: 15px;
+    width: 95%;
+    border-collapse: collapse;
+ }
+ 
+ form#orderForm fieldset {
+    border: none;
+    margin-left: -10px;
+ }
+ 
+ form#orderForm input[type="text"] {
+    background-color: rgba(240, 233, 222, 0.5);
+ }
+ 
+ table#orderTable caption {
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-align: left;
+    caption-side: top;
+    margin-bottom: 20px;
+ }
+ 
+ 
+ table#orderTable td {
+    height: 30px;
+    vertical-align: top;
+ }
+ 
+ form#orderForm input#orderDate {
+    text-align: left;
+ }
+ 
+ form#orderForm input[type="text"] {
+    color: black;
+ }
+ 
+ form#orderForm select {
+    display: inline-block;
+    margin-left: 10px;
+    color: black;
+ }
+ 
+ table#orderTable tr:first-of-type {
+    border-bottom: 1px solid rgb(151, 151, 151);
+ }
+ 
+ table#orderTable tr td:last-of-type input {
+    text-align: right;
+    border: none;
+ }
+ 
+ table#orderTable tr:nth-of-type(3) {
+    border-bottom: 1px solid rgb(151, 151, 151);
+ }
+ 
+ table#orderTable tr:nth-of-type(2) td, table#orderTable tr:nth-of-type(4) td {
+    padding-top: 15px;
+ }
+ 
+ table#orderTable tr:nth-of-type(5) td {
+    border-bottom: 6px double rgb(151, 151, 151);
+ }
+ 
+ table#orderTable tr:last-of-type td {
+    padding-top: 15px;
+ }
+ 
+ table#orderTable td.rightA {
+    text-align: right;
+    padding-right: 10px;
+ }
+ 
+ form#orderForm fieldset label {
+    display: block;
+ }
+ 
+ form#orderForm input#buttonAdd {
+    display: block;
+    width: 120px;
+    height: 35px;
+    margin: 15px auto;
+    background-color: rgba(232, 218, 201, 0.8);
+    font-size: 0.7em;
+    border-radius: 20px;
+ }
+ 
+/* Order Table Styles */
+
+table#orderTable {
+    margin: 30px 0px 0px 45px;
+    width: 65%;
+    border-collapse: collapse;
+    color: black;
+ }
+ 
+ 
+ form#order input {
+    background-color: transparent;
+    border: none;
+    color: black;
+ }
+ 
+ table#orderTable caption {
+    font-size: 1.3em;
+    text-align: left;
+    color:black;
+        font-weight: normal;
+ }
+ 
+ 
+ table#orderTable td {
+    height: 20px;
+    vertical-align: top;
+ }
+ 
+ form#order input#orderDate {
+    text-align: right;
+ }
+ 
+ form#order input#qty {
+    width: 3em;
+ }
+ 
+ form#order input#menuName, form#order input#tipName {
+    width: 15em;
+ }
+ 
+ form#order input {
+    color:black;
+ }
+ 
+ table#orderTable tr:first-of-type {
+    border-bottom: 1px solid black;
+ }
+ 
+ table#orderTable tr td:last-of-type input {
+    text-align: right;
+    border: none;
+ }
+ 
+ table#orderTable tr:nth-of-type(3) {
+    border-bottom: 1px solid black;
+ }
+ 
+ table#orderTable tr:nth-of-type(2) td, table#orderTable tr:nth-of-type(4) td {
+    padding-top: 15px;
+ }
+ 
+ table#orderTable tr:nth-of-type(5) td {
+    border-bottom: 4px double black;
+ }
+ 
+ table#orderTable tr:last-of-type td {
+    padding-top: 15px;
+ }
+ 
+ table#orderTable td.rightA {
+    text-align: right;
+    padding-right: 10px;
+ }
+ 
+ 
+ 
+ /* Payment Form Styles */
+ 
+ section#paySection {
+    -webkit-flex: 1 1 800px;
+    flex: 1 1 800px;
+    border-left: 4px double rgb(101, 101, 101);   
+    min-height: 300px;
+ }
+ 
+ section#paySection form#payment fieldset#cards {
+    display: block;
+    clear: left;
+ }
+ 
+ section#paySection p#footnote {
+    font-size: 0.7em;
+    text-align: left;
+    margin: 0px 10px 20px 140px;
+ }
+ 
+ section#paySection h1 {
+    text-align: left;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+    margin: 20px 400px;
+    font-weight: normal;
+    color: rgb(57, 44, 28);
+ }
+ 
+ form#payment fieldset {
+    border: none;
+ }
+ 
+ 
+ form#payment fieldset#cards label:first-of-type {
+    text-align: right;
+    margin-left: 50px;
+ }
+ 
+ form#payment legend {
+    font-size: 1.3em;
+    padding: 8px;
+    width: 80%;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color: rgb(57, 44, 28);
+ }
+ 
+ 
+ /* Input and Label Styles */
+ 
+ form#payment label {
+    display: block;
+    float: left;
+    clear: left;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    width: 180px;
+    text-align: right;
+    color: rgb(57, 44, 28);
+ }
+ 
+ 
+ form#payment input, form#payment select {
+    display: block;
+    float: left;
+    box-shadow: 0px 0px 15px white;
+ }
+ 
+ /* Radio Button Styles */
+ 
+ form#payment label.cardLabel {
+    display: inline-block;
+    float: none;
+    width: auto;
+ }
+ 
+ form#payment fieldset#cards img {
+    display: inline-block;
+    margin-left: 5px;
+    box-shadow: 0px 0px 10px rgb(124, 92, 54);
+ }
+ 
+ 
+ form#payment input[type='radio'] {
+    display: inline-block;
+    width: auto;
+    float: none;
+    clear: none;
+ }
+ 
+ form#payment fieldset#cards {
+    text-align: left;
+    margin-left: 50px;
+ }
+ 
+ form#payment span {
+    width: 30px;
+    text-align: center;
+    display: block;
+    float: left;
+ }
+ 
+ form#payment input#cvc {
+    width: 3em;
+ }
+ 
+ form#payment input#subButton {
+    display: block;
+    width: 180px;
+    height: 35px;
+    margin: 15px 0px 10px 200px;
+    background-color: rgba(232, 218, 201, 0.8);
+    font-size: 0.7em;
+    border-radius: 20px;
+    float: none;
+ }
+ 
+ /* Valid and Invalid Styles */
+ 
+ input:invalid, input:focus:invalid, select:invalid, select:focus:invalid {
+    outline: none;
+    background-color: rgba(221,147,148,0.2);
+  }
+ 
+ input:valid, input:focus:valid, select:valid, select:focus:valid {
+    outline: none;
+    background-color: none;
+ }
+ 
+ 

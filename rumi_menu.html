@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+    Name: Ahmad Monir
+    Filename: rumi_menu.html
+   -->
+    <meta charset="utf-8" />
+    <title>Rumi restaurant</title>
+
+
+    <link href="index_style.css" rel="stylesheet" />
+    <link href="rumi_layout.css" rel="stylesheet" />
+    <link rel="stylesheet" href="payment.html">
+    <script src="rumi_menu.js" async></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="rumi_logo.jpg" id="logoImage" alt="Rumi restaurant"></a>
+        <div id="horizontalNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="rumi_menu.html">Menu</a> </li>
+                    <li><a href="rumi_events.html">Events</a> </li>
+                    <li><a href="rumi_catering.html">Catering</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br>
+    <div id="divh3"></div>
+<!-- 10 -->
+    <section id="orderSection">
+
+        <form id="orderForm" name="orderForm" method="get" action="payment.html">
+
+            <table id="orderTable">
+                <caption>Please Place your Order</caption>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" id="orderDate" name="orderDate" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--10. add dropdown list for menu -->
+                        <label for="menu">Menu</label>
+                        <select name="menu" id="menu">
+                            <option value="12.95" selected>KABULI PALAO($12.95)</option>
+                            <option value="11.45">MANTOO($11.45)</option>
+                            <option value="23.95">LAMB SHANK($23.95)</option>
+                            <option value="18.25">CHICKEN KABAB($18.25)</option>
+                            <option value="19.95">LAMB KABAB($19.95)</option>
+                            <option value="9.95">BOLANI($9.95)</option>
+                            <option value="5.95">SECIAL DRINK($5.95)</option>
+                            <option value="5.25">FIRNI DESSERT (MILK PUDDING)($5.25)</option>
+                        </select>
+                        <input type="hidden" id="menuName" name="menuName" />
+                    </td>
+                    <td class="rightA">
+                        <!--2. add dropdown list for Qty -->
+                        <label for="qty">Qty</label>
+                        <select name="qty" id="qty">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" name="initialCost" id="initialCost" size="10" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <fieldset>
+                            <legend>Tips are Appreciated</legend>
+                            <label><input type="radio" id="tip_0" name="tip" value="0" checked /> No tip
+                            </label>
+                            <label><input type="radio" id="tip_1" name="tip" value="0.05" />
+                                5% tip</label>
+                            <label><input type="radio" id="tip_2" name="tip" value="0.10" />
+                                10% tip</label>
+                            <label><input type="radio" id="tip_1" name="tip" value="0.15" />
+                                15% tip</label>
+                        </fieldset>
+                        <input type="hidden" id="tipName" name="tipName" />
+                    </td>
+                    <td>
+                        <input type="text" name="tipCost" id="tipCost" size="10" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="rightA">Subtotal</td>
+                    <td class="outcell">
+                        <input type="text" name="subtotal" id="subtotal" size="10" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="rightA">Tax (5%)</td>
+                    <td>
+                        <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="rightA">TOTAL</td>
+                    <td>
+                        <input type="text" name="totalCost" id="totalCost" size="10" readonly />
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" id="buttonAdd" value="add to cart" />
+
+        </form>
+    </section>
+    <article id="menuArticle" class="menuArticle">
+
+        <h1>Our Menu</h1>
+
+        <div>
+            <h4>KABULI PALAO</h4>
+            <img src="rumi_palao.jpg" class="img" width="500px" height="350px" alt="Rice Picture">
+
+            <dt>A generous portion of Basmati rice cooked in a special blend of saffron, black pepper, cardamom,
+                coriander and cumin, topped with raisins, nuts and julienned carrots.($12.95)</dt>
+        </div>
+
+
+
+        <hr />
+        <div>
+            <h4>MANTOO</h4>
+            <img src="rumi_dumpling.jpg" class="img" width="500px" height="350px" alt="dumplin picture">
+            <dt>Lightly spiced fragrant ground beef filled dumplings topped with yougurt sauce and lentils ($11.45)</dt>
+        </div>
+
+        <hr />
+        <div>
+            <h4>LAMB SHANK</h4>
+            <img src="rumi_shank.jpg" class="img" width="500px" height="350px" alt="lamb shank">
+            <dt>A generous portion lamb marinated in garlic, coriander seeds, lemon juice, turmuric and touch of cayenne
+                pepper. Served with Badenjan Borani, Basmati rice, Salata and Afghan Bread. ($23.95)</dt>
+        </div>
+
+        <hr />
+        <div>
+            <h4>CHICKEN KABAB</h4>
+            <img src="rumi_checken.jpg" class="img" width="500px" height="350px" alt="">
+            <dt>Chicken marinated overnight in yogurt, turmeric, garlic and a touch of cayenne pepper. Served with an
+                optional piece of Badenjan Borani.($18.25)</dt>
+        </div>
+
+        <hr />
+        <div>
+            <h4>LAMB KABAB</h4>
+            <img src="rumi_lambkabab.jpg" class="img" width="500px" height="350px" alt="">
+            <dt>Chunks of beef fillet marinated in a blend of ground coriander, garlic and freshly ground black pepper.
+                Served with an optional piece of Badenjan Borani. ($19.95)</dt>
+        </div>
+
+        <hr />
+        <div>
+            <h4>BOLANI</h4>
+            <img src="rumi_bolani.jpg" class="img" width="500px" height="350px" alt="">
+            <dt>Turnovers filled with scallions, cilantro and potato, served with yogurt-garlic dip. ($9.95)</dt>
+        </div>
+
+        <hr />
+        <div>
+            <h4>SECIAL DRINK</h4>
+            <img src="rumi_drink.jpg" class="img" width="500px" height="350px" alt="">
+            <dt>Yogurt, minced cucumbers, onions and mint, served with Afghan bread(optional). ($5.95)</dt>
+        </div>
+
+        <hr />
+        <div>
+            <h4>FIRNI DESSERT (MILK PUDDING)</h4>
+            <img src="rumi_ferni.jpg" class="img" width="500px" height="350px" alt="">
+            <dt>Custard pudding flavored with cardamom and rosewater and topped with ground pistachios. ($5.25)</dt>
+        </div>
+    </article>
+    <form action=""></form>
+
+    <footer>
+        Rumi Restaurant &hearts; S 150th ST, SeaTac, WA &hearts; 98188 &hearts; 206-111-2222
+    </footer>
+
+</body>
+
+</html>

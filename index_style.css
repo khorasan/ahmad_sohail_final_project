@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import "rumi_layout.css";
+
+
+article.homeArticle h2,
+p {
+    color: brown;
+    font-size: 0.7em;
+}
+
+article.homeArticle p {
+    margin-left: 30px;
+}
+
+article.caterArticle p {
+    margin-left: 30px;
+}
+
+div#caterlist   {
+    color: brown;
+    margin-left: 100px;
+    list-style-image: url('img.png'); 
+    
+}
+
+article.eventsArticle p {
+    margin-left: 30px;
+}
+
+article#eventsArticle,
+aside {
+    color: darkgreen;
+    font-size: 0.8em;
+    margin-top: 50px;
+}
+div#aboutrumi{
+    display: block;
+    color: black;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+
+
+article.menuArticle h1 {
+    color: black;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+article.eventsArticle h1 {
+    color: darkgreen;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+article#eventsArticle {
+    color: darkgreen;
+    padding-left: 10px;
+    
+    text-align: center;
+}
+
+article.menuArticle {
+    color: black;
+    font-size: 1em;
+    padding-top: 40px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+aside {
+    padding-left: 10px;
+    text-align: center;
+}
+h4 {
+    font-size: 1.5em;
+}
+
+.img {
+    height: 2%;
+    width: 40%;
+}
+
+div.menuArticle {
+    width: 100%;
+}
+h2#aboutrumi{
+    display: block;
+    text-align:left;
+    margin-left: 30px;
+}
+form#orderForm input#buttonAdd {
+    display: block;
+    width: 120px;
+    height: 35px;
+    margin: 15px auto;
+    background-color: rgba(232, 218, 201, 0.8);
+    font-size: 1.3em;
+    border-radius: 20px;
+ }
+ form#order input#menuName, form#order input#tipName {
+    width: 15em;
+ }
+ section#paySection p#footnote {
+    font-size: 0.7em;
+    text-align: left;
+    margin: 0px 10px 20px 140px;
+ }
+ form#payment input#subButton {
+    display: block;
+    width: 180px;
+    height: 35px;
+    margin: 15px 0px 10px 200px;
+    background-color: rgba(232, 218, 201, 0.8);
+    font-size: 0.8em;
+    border-radius: 20px;
+    float: none;
+ }
+ table#orderTable caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-align: left;
+    caption-side: top;
+    margin-bottom: 20px;
+ }
+ form#orderForm input#orderDate {
+    text-align: left;
+ }
